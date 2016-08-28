@@ -1,0 +1,117 @@
+/* Imports */
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:200,300);
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'existencelight';
+    src: url('../font/existence-light-webfont.eot');
+    src: url('../font/existence-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/existence-light-webfont.woff') format('woff'),
+         url('../font/existence-light-webfont.ttf') format('truetype'),
+         url('../font/existence-light-webfont.svg#existencelight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Global */
+body {
+		background: #232c2b url('../img/noise.png') repeat;
+		color: rgba(100, 100, 100, 0.5);
+		font-weight: 300;
+		font-family: 'existencelight';
+}
+
+header, section, footer,
+aside, nav, article, figure {
+	display: block;
+	margin: 0px;
+}
+
+/* Layout */
+body {
+	clear: both;
+}
+
+small {
+	color: #666;
+	font-size: .8em;
+}
+
+.wrapper {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.container {
+  position: absolute;
+  height: 400px;
+  top: 50%;
+  margin: -200px 0 auto auto;
+  width: inherit;
+}
+
+.col-half {
+  display: block;
+  width: 50%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.info {
+  margin-top: 10px;
+  color: white;
+}
+
+.info a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hide {
+  display: block;
+  float: left;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  text-indent: -500px;
+}
+
+.logo {
+  margin-left: 8px;
+}
+
+.footer {
+  position:absolute;
+  width: 100%;
+  bottom:0;
+  height: 20px;
+  font-size: 10px;
+  color: #555;
+  margin-left: -8px; /* The peg doesn't have a center */
+}
+
+.footer a {
+  color: #555;
+}
+
+.footer a:visited {
+  color: #666;
+}
